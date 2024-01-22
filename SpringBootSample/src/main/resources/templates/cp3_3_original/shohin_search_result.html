@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>検索結果</title>
+</head>
+<body>
+<h1>検索結果</h1>
+<table border="0">
+	<tr>
+		<th>商品ID</th>
+		<td th:text="${shohin.shohinId}"></td>
+	</tr>
+	<tr>
+		<th>商品名</th>
+		<td th:text="${shohin.shohinMei}"></td>
+	</tr>
+	<tr>
+		<th>商品分類</th>
+		<td th:text="${shohin.shohinBunrui}"></td>
+	</tr>
+	<tr>
+		<th>販売単価</th>
+		<td th:text="${shohin.hanbaiTanka}"></td>
+	</tr>
+	<tr>
+		<th>仕入単価</th>
+		<td th:text="${shohin.shiireTanka}"></td>
+	</tr>
+</table>
+<a href="/shohin/">戻る</a>
+</body>
+</html>
