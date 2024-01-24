@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo.cp3.entity;
 
 import lombok.Data;
 

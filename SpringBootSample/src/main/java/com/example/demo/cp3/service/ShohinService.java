@@ -1,12 +1,12 @@
-package com.example.demo.service;
+package com.example.demo.cp3.service;
 
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.entity.Shohin;
-import com.example.demo.repository.ShohinRepository;
+import com.example.demo.cp3.entity.Shohin;
+import com.example.demo.cp3.repository.ShohinRepository;
 
 @Service
 public class ShohinService {

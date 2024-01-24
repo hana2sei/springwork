@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.example.demo.cp3.repository;
 
 import java.util.Map;
 
