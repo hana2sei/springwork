@@ -12,7 +12,7 @@
 	<label>誕生日:<input type="text" th:field="*{birthday}"></label><br>
 	<label>年齢:<input type="text" th:field="*{age}"></label><br>
 	<span th:each="item:${genderMap}">
-		<input type="radio" th:value="${item.value}" name="gender" th:field="*{gender}">
+		<input type="radio" th:value="${item.value}" th:field="*{gender}">
 		<label th:text="${item.key}"></label>
 	</span>
 	<br>
