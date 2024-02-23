@@ -5,6 +5,15 @@
 <title>ユーザー登録</title>
 </head>
 <body>
+<h1>ユーザー登録</h1>
+<ul>
+	<li th:errors="*{signupForm.userId}"></li>
+	<li th:errors="*{signupForm.password}"></li>
+	<li th:errors="*{signupForm.userName}"></li>
+	<li th:errors="*{signupForm.birthday}"></li>
+	<li th:errors="*{signupForm.age}"></li>
+	<li th:errors="*{signupForm.gender}"></li>
+</ul>
 <form method="post" action="/user/signup" th:object="${signupForm}">
 	<label>ユーザーId:<input type="text" th:field="*{userId}"></label><br>
 	<label>パスワード:<input type="text" th:field="*{password}"></label><br>
