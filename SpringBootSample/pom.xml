@@ -55,12 +55,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- DB接続ライブラリ(Postgresql) -->
+		<!-- DB接続ライブラリ(Postgresql) start -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- DB接続ライブラリ(Postgresql) end -->
 		<!-- 6章 バインド＆バリデーション 画面作成で追加 start -->
 		<dependency>
 			<groupId>org.webjars</groupId>
