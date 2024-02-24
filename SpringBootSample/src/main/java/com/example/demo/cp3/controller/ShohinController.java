@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -17,7 +18,7 @@ public class ShohinController {
 	@Autowired
 	private ShohinService service;
 	
-	@GetMapping("/")	// http://localhost:8080/shohin でアクセス可
+	@GetMapping("")	// http://localhost:8080/shohin でアクセス可
 	public String getFirst() {
 		return "cp3_3_original/shohin_search";
 	}
@@ -29,5 +30,11 @@ public class ShohinController {
 		
 //		System.out.println(shohin);
 		return "cp3_3_original/shohin_search_result";
+	}
+	
+	@PostMapping("/delete")	// http://localhost:8080/shohin/delete でアクセス可（POST）
+	public String getDelete(@RequestParam("id") String id) {
+		service.deleteShohin(id);	
+		return "cp3_3_original/shohin_search";
 	}
 }

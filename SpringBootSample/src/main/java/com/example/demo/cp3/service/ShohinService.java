@@ -26,4 +26,9 @@ public class ShohinService {
 		
 		return shohin;
 	}
+	
+	public void deleteShohin(String id) {
+		int count = repository.deleteById(id);
+		System.out.println("log:処理件数=" + count);
+	}
 }
